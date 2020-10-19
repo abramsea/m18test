@@ -1,0 +1,22 @@
+{
+  "name": "m18test",
+  "version": "1.0.0",
+  "description": "test for M18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abramsea/m18test.git"
+  },
+  "author": "Evgenii Abramson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abramsea/m18test/issues"
+  },
+  "homepage": "https://github.com/abramsea/m18test#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
