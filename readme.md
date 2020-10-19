@@ -13,6 +13,15 @@ _version 1.0_
 
 ### Зависимости
 
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^7.0.1",
+        "gulp-cssmin": "^0.2.0",
+        "gulp-gh-pages": "^0.5.4"
+    }
+
     
 ### Сборка
 
