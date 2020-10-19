@@ -13,6 +13,15 @@ _version 1.0_
 
 ### Зависимости
 
+    "dependencies": {
+        "autoprefixer": "^10.0.1",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0",
+        "postcss": "^8.1.2"
+    }
+
     "devDependencies": {
         "gulp-autoprefixer": "^7.0.1",
         "gulp-babel": "^7.0.1",
