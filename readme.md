@@ -9,7 +9,7 @@ _version 1.0_
 
 ### Клонирование
 
-    git clone https://abramsea.github.io/m18test.git
+    git clone https://github.com/abramsea/m18test.git
 
 ### Зависимости
 
