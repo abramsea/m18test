@@ -10,12 +10,16 @@ const path = {
     build: {
         html: 'dist',
         js: 'dist/js',
-        css: 'dist/css'
+        css: 'dist/css',
+        fonts: 'dist/fonts',
+        images: 'dist/images'
     },
     src: {
         html: 'src/index.html',
         scss: 'src/scss/main.scss',
-        js: 'src/js/*.js'
+        js: 'src/js/*.js',
+        fonts: 'src/fonts/*.woff',
+        images: 'src/images/**'
     }
 }
 
@@ -41,6 +45,18 @@ gulp.task( 'js:build', function() {
         .pipe(concat('app.js'))
         .pipe(gulp.dest(path.build.js));
 })
+
+gulp.task( 'fonts', function() {
+    return gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.build.fonts));
+})
+
+gulp.task( 'images', function() {
+    return gulp.src(path.src.images)
+        .pipe(gulp.dest(path.build.images))
+})
+
+gulp.task( 'build', gulp.series ('html:build', 'sass', 'js:build', 'fonts', 'images'))
 
 gulp.task( 'deploy', function() {
     return gulp.src('./dist/**/*')

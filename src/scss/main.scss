@@ -1,9 +1,13 @@
 @import 'variables';
+@import 'fonts';
 @import 'header';
 
-.test
-{
-    padding: 0;
+* {
     margin: 0;
-    color: $grey;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $mainfont;
 }
