@@ -1,0 +1,32 @@
+div.icon
+{
+    width: 24px;
+    margin: 0 10px 0 0
+}
+
+div.icon-phone::before
+{
+    content: url('../images/tel.svg');
+}
+
+div.icon-mail::before
+{
+    content: url('../images/email.svg');
+}
+
+div.social-icon
+{
+    width: 50px;
+}
+
+div.social-icon-facebook::before {
+    content: url('../images/facebook.svg');
+}
+
+div.social-icon-vk::before {
+    content: url('../images/vk.svg');
+}
+
+div.social-icon-ig::before {
+    content: url('../images/ig.svg');
+}
