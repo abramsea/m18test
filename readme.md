@@ -18,4 +18,11 @@ _version 1.0_
 
 &bull; для запуска сборки:
 
-    gulp build:prod
+    gulp html:build
+    gulp sass
+    gulp js:build
+
+
+&bull; для запуска деплоя:
+
+    gulp deploy
