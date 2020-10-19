@@ -6,3 +6,5 @@ function slider() {
 }
 slider();
 modal('lol');
+
+window.scrollBy({ top: 100, behavior: 'smooth' });
