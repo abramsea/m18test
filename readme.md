@@ -25,9 +25,7 @@ _version 1.0_
 
 &bull; для запуска сборки:
 
-    gulp html:build
-    gulp sass
-    gulp js:build
+    gulp build
 
 
 &bull; для запуска деплоя:
