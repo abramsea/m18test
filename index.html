@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/base.min.css">
     <title>M18 Test</title>
 </head>
 
 <body> 
-    <div class="intro">
+    <section class="intro">
         <div class="main-info">
             <img src="./images/logo.svg" alt="logo" class="logo">
-            <h1 class="intro-title">
+            <h1 class="title">
                 Ремонт квартир в типовых домах
             </h1>
             <p class="intro-subtitle">
@@ -23,7 +23,7 @@
                     Старт весной 2021
                 </p>
             </div>
-            <a href="#copyright" class="scroll-down">
+            <a href="#advantages" class="scroll-down">
                 <img src="./images/arrows.svg" alt="листайте вниз" class="chevron">
                 <p class="scroll-down-hint">
                     Листайте вниз, <br />
@@ -43,7 +43,137 @@
                 <p class="video-button-hint">Смотреть видео</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <main>
+        <section class="advantages" id="advantages">
+            <h2 class="main-title">
+                FIX Ремонт — это легко
+            </h2>
+            <p class="main-subtitle">
+                Готовые проекты, проверенные материалы и умелые руки
+            </p>
+            <div class="advantages-grid">
+                <div class="advantage">
+                    <h3 class="advantage-title">
+                        Опытная команда
+                    </h3>
+                    <p class="advantage-description">
+                        Команда проектировщиков и строителей со стажем работы более 6 лет
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <h3 class="advantage-title">
+                        Типовые дизайн-проекты
+                    </h3>
+                    <p class="advantage-description">
+                        Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <h3 class="advantage-title">
+                        Фиксированная смета
+                    </h3>
+                    <p class="advantage-description">
+                        Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора
+                    </p>
+                </div>
+
+                <div class="advantage advantage-term">
+                    <h3 class="advantage-title">
+                        Срок работ
+                    </h3>
+                    <p class="title">
+                        3 месяца
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <h2 class="main-title">
+                3 стиля интерьера
+            </h2>
+            <p class="main-subtitle">
+                Скандинавский, классический и эко-стиль
+            </p>
+            <div class="slider-row">
+                <div class="slider-buttons">
+                    <button class="slider-button slider-button-prev">
+                        <img src="./images/prev.svg" alt="предыдущий слайд">
+                    </button>
+                    <button class="slider-button slider-button-next">
+                        <img src="./images/next.svg" alt="следующий слайд">
+                    </button>
+                </div>
+                <div class="slider-item" id="slide1">
+                    <img src="./images/slide1.jpg" alt="классический стиль" class="slider-img">
+                    <p class="slider-hint">
+                        Светлая кухня в классическом стиле
+                    </p>
+                </div>
+                <div class="slider-item" id="slide2">
+                    <img src="./images/slide2.jpg" alt="скандинавский стиль" class="slider-img">
+                    <p class="slider-hint">
+                        Кафельная плитка в ванной комнате
+                        в скандинавском стиле
+                    </p>
+                </div>
+                <div class="slider-item" id="slide3">
+                    <img src="./images/slide3.jpg" alt="эко-стиль" class="slider-img">
+                    <p class="slider-hint">
+                        Гостиная-кинотеатр в эко-стиле
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe" id="subscribe">
+            <div class="subscribe-wrapper">
+                <h2 class="main-title">
+                    Узнайте о запуске сервиса первым
+                </h2>
+                <div class="subscribe-gift">
+                    <img src="./images/door.svg" alt="первым 10 клиентам подарок" class="subscribe-icon">
+                    <p class="subscribe-gift-text">
+                        Первым 10 клиентам стальная входная дверь в подарок
+                    </p>
+                </div>
+                <form>
+                    <div class="form-item">
+                        <input type="text" name="name" required>
+                        <label for="name">Имя и фамилия*</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="email" name="email" required>
+                        <label for="email">E-mail адрес*</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="phone" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="phone">
+                        <label for="phone">Телефон</label>
+                    </div>
+                    <button class="button button-subscribe" type="submit">
+                        Подписаться
+                    </button>
+                </form>
+                <p class="subscribe-hint">
+                    * Обязательные для заполнения поля
+                </p>
+                <a href="javascpript:void(0)" class="subscribe-policy-link">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
     
 
     <script src="./js/app.js"></script>
