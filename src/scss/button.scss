@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: $mainfont;
     font-size: $main-text-size;
     line-height: 1;
     width: 260px;
@@ -10,11 +11,18 @@
     background: $main-orange;
     color: $white;
     text-decoration: none;
+    border: none;
     border-radius: 25px;
     box-shadow: 0 7px 15px rgba(249, 87, 46, .6);
     transition: all .3s;
-}
+    cursor: pointer;
+    
+    &:hover {
+        opacity: .7;
+    }
 
-.button:hover {
-    opacity: .7;
+    &:focus {
+        border: 2px solid $border-orange;
+        outline: none;
+    }
 }

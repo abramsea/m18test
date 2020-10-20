@@ -1,4 +1,4 @@
-html > body > div.intro
+html > body > section.intro
 {
     display: flex;
     justify-content: space-between;
@@ -6,29 +6,24 @@ html > body > div.intro
     height: 100vh;
 }
 
-html > body > div.intro > div.main-info
+html > body > section.intro > div.main-info
 {
     width: 50%;
     padding: 28px 0 28px 90px;
     position: relative;
 } 
 
-html > body > div.intro > div.main-info > img.logo
+html > body > section.intro > div.main-info > img.logo
 {
     width: 200px;
 }
 
-html > body > div.intro > div.main-info > h1.intro-title
+html > body > section.intro > div.main-info > h1.title
 {
-    font-size: $title-lg-size;
-    line-height: $title-lg-line-height;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    max-width: 508px;
     margin: 225px 0 0 0;
 }
 
-html > body > div.intro > div.main-info > p.intro-subtitle
+html > body > section.intro > div.main-info > p.intro-subtitle
 {
     font-size: $subtitle-size;
     line-height: $subtitle-line-height;
@@ -36,14 +31,14 @@ html > body > div.intro > div.main-info > p.intro-subtitle
     max-width: 408px;
 }
 
-html > body > div.intro > div.main-info > div.subscribe-button-box
+html > body > section.intro > div.main-info > div.subscribe-button-box
 {
     margin: 44px 0 0 0;
     display: flex;
     align-items: center;
 }
 
-html > body > div.intro > div.main-info > div.subscribe-button-box > p.subscribe-button-hint
+html > body > section.intro > div.main-info > div.subscribe-button-box > p.subscribe-button-hint
 {
     color: $medium-gray;
     font-size: $main-text-size;
@@ -51,7 +46,7 @@ html > body > div.intro > div.main-info > div.subscribe-button-box > p.subscribe
     margin: 0 0 0 32px;
 }
 
-html > body > div.intro > div.main-info > a.scroll-down
+html > body > section.intro > div.main-info > a.scroll-down
 {
     display: flex;
     align-items: center;
@@ -61,7 +56,7 @@ html > body > div.intro > div.main-info > a.scroll-down
     text-decoration: none;
 }
 
-html > body > div.intro > div.main-info > a.scroll-down > img.chevron
+html > body > section.intro > div.main-info > a.scroll-down > img.chevron
 {
     width: 40px;
     height: 30px;
@@ -70,13 +65,13 @@ html > body > div.intro > div.main-info > a.scroll-down > img.chevron
     transition: all .3s;
 }
 
-html > body > div.intro > div.main-info > a.scroll-down:hover > img.chevron
+html > body > section.intro > div.main-info > a.scroll-down:hover > img.chevron
 {
     transform: scaleX(.8);
 }
 
 
-html > body > div.intro > div.main-info > a.scroll-down > p.scroll-down-hint
+html > body > section.intro > div.main-info > a.scroll-down > p.scroll-down-hint
 {
     color: $main-orange;
     font-size: $main-text-size;
@@ -85,7 +80,7 @@ html > body > div.intro > div.main-info > a.scroll-down > p.scroll-down-hint
 
 
 
-html > body > div.intro > div.video-box
+html > body > section.intro > div.video-box
 {
     position: relative;
     display: flex;
@@ -97,7 +92,7 @@ html > body > div.intro > div.video-box
     background-size: cover;
 }
 
-html > body > div.intro > div.video-box > a 
+html > body > section.intro > div.video-box > a 
 {
     display: flex;
     align-items: center;
@@ -114,7 +109,7 @@ html > body > div.intro > div.video-box > a
 }
 
 
-html > body > div.intro > div.video-box > div.video-button-box
+html > body > section.intro > div.video-box > div.video-button-box
 {
     position: absolute;
     top: 50%;
@@ -123,7 +118,7 @@ html > body > div.intro > div.video-box > div.video-button-box
     transform: translate(-50%, -50%);
 }
 
-html > body > div.intro > div.video-box > div.video-button-box > div.video-button-circle
+html > body > section.intro > div.video-box > div.video-button-box > div.video-button-circle
 {
     width: 250px;
     height: 250px;
@@ -135,7 +130,7 @@ html > body > div.intro > div.video-box > div.video-button-box > div.video-butto
     justify-content: center;
 }
 
-html > body > div.intro > div.video-box > div.video-button-box > div.video-button-circle > img.video-button
+html > body > section.intro > div.video-box > div.video-button-box > div.video-button-circle > img.video-button
 {
     width: 110px;
     margin: 0 0 0 30px;
@@ -146,7 +141,7 @@ html > body > div.intro > div.video-box > div.video-button-box > div.video-butto
     }
 }
 
-html > body > div.intro > div.video-box > div.video-button-box > p.video-button-hint
+html > body > section.intro > div.video-box > div.video-button-box > p.video-button-hint
 {
     font-size: $main-text-size;
     margin: 20px auto 0 auto;
