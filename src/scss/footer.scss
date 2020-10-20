@@ -1,12 +1,14 @@
 html > body > footer
 {
-    background: $footer-gray;
     padding: 72px 80px 28px 80px;
+
+    background: $footer-gray;
 }
 
 html > body > footer > div.footer-main-info
 {
     padding: 0 0 72px 0;
+
     border-bottom: 1px solid $light-gray;
 }
 
@@ -14,51 +16,60 @@ html > body > footer > div.footer-main-info > div.social
 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+
     max-width: 210px;
     margin: 0 auto;
 }
 
 html > body > footer > div.footer-main-info > h2.footer-title
 {
+    margin: 32px 0 0 0;
+
     font-size: $subtitle-size;
     line-height: 26px;
     font-weight: 400;
     text-align: center;
-    margin: 32px 0 0 0;
 }
 
 html > body > footer > div.footer-main-info > p.footer-subtitle
 {
+    max-width: 440px;
+
+    margin: 4px auto 0 auto;
+
     font-size: $main-text-size;
     line-height: $main-text-line-height;
-    color: $medium-gray;
     text-align: center;
-    max-width: 440px;
-    margin: 4px auto 0 auto;
+
+    color: $medium-gray;
 }
 
 html > body > footer > div.footer-main-info > div.contacts
 {
-    margin: 76px auto 0 auto;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
+
     max-width: $main-width;
+    margin: 76px auto 0 auto;
 }
 
 html > body > footer > div.footer-main-info > div.contacts > a
 {
-    font-size: $subtitle-size;
-    line-height: $subtitle-line-height;
-    transition: all .3s;
-    color: $black;
-    text-decoration: none;
     display: flex;
     align-items: center;
-    
+
+    font-size: $subtitle-size;
+    line-height: $subtitle-line-height;
+    text-decoration: none;
+
+    color: $black;
+
+    transition: all 0.3s;
+
     &:hover
     {
         color: $main-orange;
@@ -82,16 +93,19 @@ html > body > footer > div.footer-main-info > div.contacts > div.address > h2
 
 html > body > footer > div.footer-main-info > div.contacts > div.address > p
 {
-    color: $medium-gray;
     margin: 12px 0 0 0;
+
+    color: $medium-gray;
 }
 
 html > body > footer > p.footer-copyright
 {
     padding: 32px 0 0 0;
     margin: 0 auto;
+
     font-size: $main-text-size;
     line-height: $main-text-line-height;
-    color: $medium-gray;
     text-align: center;
+
+    color: $medium-gray;
 }
