@@ -1,10 +1,12 @@
 // colors
 
 $white: #fff;
-$light-gray: #f2f2f2;
+$footer-gray: #f2f2f2;
+$light-gray: #ccc;
 $medium-gray: #666;
 $black: #000;
 $main-orange: #f9572e;
+$border-orange: #af3d21;
 $line-turquoise: #63d2c1;
 $text-turquoise: #33b5a3;
 
@@ -13,7 +15,15 @@ $text-turquoise: #33b5a3;
 $mainfont: 'Muller', Arial, Helvetica, sans-serif;
 $title-lg-size: 64px;
 $title-lg-line-height: 1;
+$title-md-size: 40px;
+$title-md-line-height: 50px;
+$title-sm-size: 24px;
+$title-sm-line-height: 32px;
 $subtitle-size: 21px;
 $subtitle-line-height: 30px;
 $main-text-size: 16px;  
 $main-text-line-height: 24px;
+
+// widths
+
+$main-width: 984px;

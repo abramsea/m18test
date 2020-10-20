@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'fonts';
+@import 'icons';
+@import 'intro';
+@import 'button';
+@import 'advantages';
+@import 'slider';
+@import 'subscribe';
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+    font-family: $mainfont;
+}
+
+body
+{
+    background: $white;
+    overflow-x: hidden;
+}
+
+.title
+{
+    font-size: $title-lg-size;
+    line-height: $title-lg-line-height;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    max-width: 508px;
+}
+
+
+
+h2.main-title
+{
+    font-size: $title-md-size;
+    line-height: $title-md-line-height;
+}
+
+p.main-subtitle
+{
+    font-size: $main-text-size;
+    line-height: $main-text-line-height;
+    color: $text-turquoise;
+    text-transform: uppercase;
+    margin: 8px 0 0 0;
+    font-weight: 600;
+}

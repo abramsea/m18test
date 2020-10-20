@@ -1,0 +1,91 @@
+html > body > main > section.slider
+{
+    padding: 184px 0 0 0;
+    max-width: $main-width;
+    margin: 0 auto;
+}
+
+html > body > main > section.slider > div.slider-row 
+{
+    margin: 52px 0 0 0;
+    position: relative;
+    transition: all .3s;
+}
+
+html > body > main > section.slider > div.slider-row > div.slider-buttons
+{
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+    z-index: 1000;
+}
+
+html > body > main > section.slider > div.slider-row > div.slider-buttons > button
+{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &:first-of-type
+    {
+        margin: 0 32px 0 0;
+    }
+
+    &:focus
+    {
+        outline: none;
+    }
+}
+
+
+html > body > main > section.slider > div.slider-row > div.slider-buttons > button > img
+{
+    width: 20px;
+    transition: all .2s;
+
+    &:hover
+    {
+        transform: scaleY(.8);
+    }
+}
+
+html > body > main > section.slider > div.slider-row > div.slider-item
+{
+    height: 500px;
+    width: 984px;
+    position: relative;
+    z-index: 900;
+}
+
+html > body > main > section.slider > div.slider-row > #slide1
+{
+    position: absolute;
+    left: calc(-100% - 60px);
+    top: 0;
+}
+
+html > body > main > section.slider > div.slider-row > #slide3
+{
+    position: absolute;
+    right: calc(-100% - 60px);
+    top: 0;
+}
+
+html > body > main > section.slider > div.slider-row > div.slider-item > img.slider-img
+{
+    max-height: 100%;
+    max-width: 750px;
+}
+
+html > body > main > section.slider > div.slider-row > div.slider-item > p.slider-hint
+{
+    font-size: 13px;
+    line-height: 20px;
+    color: $medium-gray; 
+    position: absolute;
+    top: 0;
+    right: 75px;
+    max-width: 144px;
+
+}
+
