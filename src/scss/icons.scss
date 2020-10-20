@@ -4,19 +4,32 @@ div.icon
     margin: 0 10px 0 0
 }
 
+div.icon-mail
+{
+    margin: 0 20px 0 0;
+
+    &::before
+    {
+        content: url('../images/email.svg');
+    }
+}
+
 div.icon-phone::before
 {
     content: url('../images/tel.svg');
 }
 
-div.icon-mail::before
-{
-    content: url('../images/email.svg');
-}
-
 div.social-icon
 {
     width: 50px;
+    height: 50px;
+    transition: all .3s;
+
+    &:hover
+    {
+        opacity: .8;
+        box-shadow: 0 15px 20px rgba(249, 87, 46, .7);
+    }
 }
 
 div.social-icon-facebook::before {
