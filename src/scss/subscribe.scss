@@ -1,6 +1,11 @@
 html > body > main > section.subscribe
 {
     padding: 160px 0 134px 0;
+
+    @media screen and (max-width: $tablet)
+    {
+        padding: 80px 20px;
+    }
 }
 
 html > body > main > section.subscribe > div.subscribe-wrapper
@@ -10,6 +15,21 @@ html > body > main > section.subscribe > div.subscribe-wrapper
     margin: 0 auto;
 
     border: 4px solid $line-turquoise;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        max-width: $mob-main-width;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        padding: 20px;
+    }
 }
 
 html > body > main > section.subscribe > div.subscribe-wrapper > h2.main-title
@@ -22,6 +42,20 @@ html > body > main > section.subscribe > div.subscribe-wrapper > h2.main-title
     margin: 0 auto;
 
     background: $white;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        top: -52px;
+
+        max-width: 560px;
+        padding: 0 12px;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        font-size: $mob-title-sm-size;
+        max-width: 80%;
+    }
 }
 
 html > body > main > section.subscribe > div.subscribe-wrapper > div.subscribe-gift

@@ -5,6 +5,14 @@ html > body > section.intro
 
     height: 100vh;
     padding: 20px;
+
+    @media screen and (max-width: $tablet)
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        height: auto;
+    }
 }
 
 html > body > section.intro > div.main-info
@@ -13,16 +21,53 @@ html > body > section.intro > div.main-info
 
     width: 50%;
     padding: 28px 0 28px 90px;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        padding: 28px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        padding: 0;
+    }
 } 
 
 html > body > section.intro > div.main-info > img.logo
 {
     width: 200px;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        width: 152px;
+    }
 }
 
 html > body > section.intro > div.main-info > h1.title
 {
+    max-width: 508px;
     margin: 225px 0 0 0;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        max-width: 400px;
+        margin-top: 20vh;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        margin-top: 120px;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        margin-top: 80px;
+    }
 }
 
 html > body > section.intro > div.main-info > p.intro-subtitle
@@ -32,6 +77,14 @@ html > body > section.intro > div.main-info > p.intro-subtitle
 
     font-size: $subtitle-size;
     line-height: $subtitle-line-height;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        margin: 16px 0 0 0;
+        max-width: 352px;
+
+        font-size: $mob-subtitle-size;
+    }
 }
 
 html > body > section.intro > div.main-info > div.subscribe-button-box
@@ -40,6 +93,14 @@ html > body > section.intro > div.main-info > div.subscribe-button-box
     align-items: center;
 
     margin: 44px 0 0 0;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 24px 0 0 0;
+    }
 }
 
 html > body > section.intro > div.main-info > div.subscribe-button-box > p.subscribe-button-hint
@@ -50,6 +111,16 @@ html > body > section.intro > div.main-info > div.subscribe-button-box > p.subsc
     line-height: $main-text-line-height;
 
     color: $medium-gray;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        margin: 20px 0 0 30px;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        margin: 20px auto 30px auto;
+    }
 }
 
 html > body > section.intro > div.main-info > a.scroll-down
@@ -66,6 +137,25 @@ html > body > section.intro > div.main-info > a.scroll-down
     &:hover > img.chevron
     {
         transform: scaleX(0.8);
+    }
+
+    @media screen and (max-width: $desktop-md)
+    {
+        left: 28px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        position: static;
+        
+        margin: 40px 0 0 0;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        justify-content: center;
+
+        margin: 40px auto 0 auto;
     }
 }
 
@@ -104,6 +194,16 @@ html > body > section.intro > div.video-box
 
     background: url('../images/intro.jpg') top center no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        padding: 20px 28px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        display: none;
+    }
 }
 
 html > body > section.intro > div.video-box > a 
@@ -153,8 +253,15 @@ html > body > section.intro > div.video-box > div.video-button-box > div.video-b
     background: url('../images/circle.svg') no-repeat;
     background-size: contain;
 
-    &:hover > img.video-button {
+    &:hover > img.video-button 
+    {
         transform: scale(1.2);
+    }
+
+    @media screen and (max-width: $desktop-md)
+    {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -164,6 +271,12 @@ html > body > section.intro > div.video-box > div.video-button-box > div.video-b
     margin: 0 0 0 30px;
 
     transition: all 0.2s;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        width: 80px;
+        margin: 0 0 0 20px;
+    }
 }
 
 html > body > section.intro > div.video-box > div.video-button-box > p.video-button-hint
