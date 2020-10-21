@@ -1,8 +1,26 @@
+@charset "UTF-8";
+
 html > body > main > section.advantages
 {
     max-width: $main-width;
     padding: 166px 0 0 0;
     margin: 0 auto;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        max-width: $mob-main-width;
+        padding: 100px 0 0 0;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        padding: 80px 20px 0 20px;
+    }
+
+    @media screen and (max-width: $mobile)
+    {
+        padding: 40px 12px 0 12px;
+    }
 }
 
 html > body > main > section.advantages > div.advantages-grid
@@ -13,6 +31,16 @@ html > body > main > section.advantages > div.advantages-grid
     grid-template-rows: 1fr 1fr;
 
     margin: 60px 0 16px 0;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        grid-gap: 60px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 html > body > main > section.advantages > div.advantages-grid > div.advantage
@@ -21,6 +49,16 @@ html > body > main > section.advantages > div.advantages-grid > div.advantage
     padding: 32px 0 0 0;
 
     border-top: 4px solid $line-turquoise;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        width: 320px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        width: 100%;
+    }
 }
 
 html > body > main > section.advantages > div.advantages-grid > div.advantage-term
@@ -37,6 +75,11 @@ html > body > main > section.advantages > div.advantages-grid > div.advantage > 
     font-size: $title-sm-size;
     line-height: $title-sm-line-height;
     font-weight: 600;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        font-size: $mob-title-sm-size;
+    }
 }
 
 html > body > main > section.advantages > div.advantages-grid > div.advantage > p.advantage-description
@@ -47,5 +90,10 @@ html > body > main > section.advantages > div.advantages-grid > div.advantage > 
     line-height: $main-text-line-height;
     
     color: $medium-gray;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        font-size: $mob-main-text-size;
+    }
 }
 

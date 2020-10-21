@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html > body > footer
 {
     padding: 72px 80px 28px 80px;
@@ -10,6 +12,11 @@ html > body > footer > div.footer-main-info
     padding: 0 0 72px 0;
 
     border-bottom: 1px solid $light-gray;
+
+    @media screen and (max-width: $mobile)
+    {
+        padding: 0 0 28px 0;
+    }
 }
 
 html > body > footer > div.footer-main-info > div.social
@@ -55,16 +62,27 @@ html > body > footer > div.footer-main-info > div.contacts
 
     max-width: $main-width;
     margin: 76px auto 0 auto;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 24px;
+
+        margin: 40px auto 0 auto;
+    }
 }
 
 html > body > footer > div.footer-main-info > div.contacts > a
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     font-size: $subtitle-size;
     line-height: $subtitle-line-height;
     text-decoration: none;
+    text-align: center;
 
     color: $black;
 

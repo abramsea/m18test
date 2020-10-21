@@ -1,8 +1,20 @@
+@charset "UTF-8";
+
 html > body > main > section.slider
 {
     max-width: $main-width;
     padding: 184px 0 0 0;
     margin: 0 auto;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        max-width: $mob-main-width;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        padding: 100px 20px 0 20px;
+    }
 }
 
 html > body > main > section.slider > div.slider-row 
@@ -56,29 +68,44 @@ html > body > main > section.slider > div.slider-row > div.slider-buttons > butt
 html > body > main > section.slider > div.slider-row > div.slider-item
 {
     position: relative;
-    height: 500px;
-    width: 984px;
     z-index: 900;
+
+    width: $main-width;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        width: 100%;
+    }
 }
 
-html > body > main > section.slider > div.slider-row > #slide1
-{
-    position: absolute;
-    left: calc(-100% - 60px);
-    top: 0;
-}
+// html > body > main > section.slider > div.slider-row > #slide1
+// {
+//     position: absolute;
+//     left: calc(-100% - 60px);
+//     top: 0;
+// }
 
-html > body > main > section.slider > div.slider-row > #slide3
-{
-    position: absolute;
-    right: calc(-100% - 60px);
-    top: 0;
-}
+// html > body > main > section.slider > div.slider-row > #slide3
+// {
+//     position: absolute;
+//     right: calc(-100% - 60px);
+//     top: 0;
+// }
 
 html > body > main > section.slider > div.slider-row > div.slider-item > img.slider-img
 {
     max-height: 100%;
     max-width: 750px;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        max-width: 100%;
+    }
 }
 
 html > body > main > section.slider > div.slider-row > div.slider-item > p.slider-hint
@@ -93,5 +120,15 @@ html > body > main > section.slider > div.slider-row > div.slider-item > p.slide
     line-height: 20px;
     
     color: $medium-gray; 
+
+    @media screen and (max-width: $desktop-md)
+    {
+        position: static;
+
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+
+        text-align: center;
+    }
 }
 

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import 'variables';
 @import 'fonts';
 @import 'icons';
@@ -32,12 +34,15 @@ body
 
 .title
 {
-    max-width: 508px;
-
     font-size: $title-lg-size;
     line-height: $title-lg-line-height;
     font-weight: 600;
     letter-spacing: -0.5px;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        font-size: $mob-title-lg-size;
+    }
 }
 
 
@@ -46,6 +51,12 @@ h2.main-title
 {
     font-size: $title-md-size;
     line-height: $title-md-line-height;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        font-size: $mob-title-md-size;
+    }
+
 }
 
 p.main-subtitle
@@ -58,4 +69,9 @@ p.main-subtitle
     font-weight: 600;
 
     color: $text-turquoise;
+
+    @media screen and (max-width: $desktop-md)
+    {
+        font-size: $mob-main-text-size;
+    }
 }
