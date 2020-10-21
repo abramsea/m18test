@@ -89,7 +89,8 @@ html > body > main > section.subscribe > div.subscribe-wrapper > form > div.form
     }
     
     &:focus~label,
-    &:not(:focus):valid~label
+    &:not(:focus):valid~label[for="name"],
+    &:not(:focus):valid~label[for="email"]
     {
         top: -10px;
 

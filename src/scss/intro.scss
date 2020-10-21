@@ -62,6 +62,11 @@ html > body > section.intro > div.main-info > a.scroll-down
     align-items: center;
 
     text-decoration: none;
+
+    &:hover > img.chevron
+    {
+        transform: scaleX(0.8);
+    }
 }
 
 html > body > section.intro > div.main-info > a.scroll-down > img.chevron
@@ -73,11 +78,6 @@ html > body > section.intro > div.main-info > a.scroll-down > img.chevron
     margin: 0 12px 0 0;
 
     transition: all 0.3s;
-}
-
-html > body > section.intro > div.main-info > a.scroll-down:hover > img.chevron
-{
-    transform: scaleX(0.8);
 }
 
 
@@ -146,10 +146,16 @@ html > body > section.intro > div.video-box > div.video-button-box > div.video-b
     width: 250px;
     height: 250px;
 
+    border-radius: 50%;
+
     cursor: pointer;
 
     background: url('../images/circle.svg') no-repeat;
     background-size: contain;
+
+    &:hover > img.video-button {
+        transform: scale(1.2);
+    }
 }
 
 html > body > section.intro > div.video-box > div.video-button-box > div.video-button-circle > img.video-button
@@ -158,10 +164,6 @@ html > body > section.intro > div.video-box > div.video-button-box > div.video-b
     margin: 0 0 0 30px;
 
     transition: all 0.2s;
-
-    &:hover {
-        transform: scale(1.2);
-    }
 }
 
 html > body > section.intro > div.video-box > div.video-button-box > p.video-button-hint
