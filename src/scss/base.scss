@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import 'variables';
 @import 'fonts';
 @import 'icons';
@@ -54,6 +56,7 @@ h2.main-title
     {
         font-size: $mob-title-md-size;
     }
+
 }
 
 p.main-subtitle
