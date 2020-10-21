@@ -21,6 +21,8 @@ html > body > main > section.slider > div.slider-row
 {
     position: relative;
 
+    display: flex;
+
     margin: 52px 0 0 0;
 
     transition: all 0.3s;
@@ -32,6 +34,17 @@ html > body > main > section.slider > div.slider-row > div.slider-buttons
     bottom: 0;
     right: 75px;
     z-index: 1000;
+    
+    @media screen and (max-width: $desktop-md)
+    {
+        bottom: -100px;
+        right: 10px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        bottom: -40px;
+    }
 }
 
 html > body > main > section.slider > div.slider-row > div.slider-buttons > button
@@ -50,6 +63,11 @@ html > body > main > section.slider > div.slider-row > div.slider-buttons > butt
     {
         outline: none;
     }
+
+    &:disabled
+    {
+        
+    }
 }
 
 
@@ -67,30 +85,40 @@ html > body > main > section.slider > div.slider-row > div.slider-buttons > butt
 
 html > body > main > section.slider > div.slider-row > div.slider-item
 {
+
     position: relative;
-    z-index: 900;
 
     width: $main-width;
+    flex-shrink: 0;
+
+    transition: all 0.4s;
 
     @media screen and (max-width: $desktop-md)
+    {
+        width: $mob-main-width;
+        padding: 0 12px;
+    }
+
+    @media screen and (max-width: $tablet)
     {
         width: 100%;
     }
 }
 
-// html > body > main > section.slider > div.slider-row > #slide1
-// {
-//     position: absolute;
-//     left: calc(-100% - 60px);
-//     top: 0;
-// }
+html > body > main > section.slider > div.slider-row > #slide1
+{
+    margin: 0 0 0 -984px;
 
-// html > body > main > section.slider > div.slider-row > #slide3
-// {
-//     position: absolute;
-//     right: calc(-100% - 60px);
-//     top: 0;
-// }
+    @media screen and (max-width: $desktop-md)
+    {
+        margin: 0 0 0 -700px;
+    }
+
+    @media screen and (max-width: $tablet)
+    {
+        margin: 0 0 0 -90vw;
+    }
+}
 
 html > body > main > section.slider > div.slider-row > div.slider-item > img.slider-img
 {
