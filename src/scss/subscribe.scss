@@ -12,6 +12,8 @@ html > body > main > section.subscribe
 
 html > body > main > section.subscribe > div.subscribe-wrapper
 {
+    position: relative;
+
     max-width: $main-width;
     padding: 30px;
     margin: 0 auto;
@@ -191,4 +193,33 @@ html > body > main > section.subscribe > div.subscribe-wrapper > a.subscribe-pol
         text-decoration: underline;
     }
 
+}
+
+html > body > main > section.subscribe > div.subscribe-wrapper > div.subscribe-ok
+{
+    max-width: 280px;
+    margin: 180px auto 215px auto;
+
+    text-align: center;
+
+    @media screen and (max-width: $moblle)
+    {
+        margin: 130px auto 140px auto;
+    }
+
+}
+
+html > body > main > section.subscribe > div.subscribe-wrapper > div.subscribe-ok > img
+{
+    max-width: 100%;
+}
+
+html > body > main > section.subscribe > div.subscribe-wrapper > div.subscribe-ok > p
+{
+    margin: 20px 0 0 0;
+
+    font-size: $main-text-size;
+    line-height: $main-text-line-height;
+    text-transform: uppercase;
+    text-align: center;
 }
