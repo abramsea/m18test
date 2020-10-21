@@ -10,30 +10,34 @@
 
 * 
 {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
 }
 
 html 
 {
-    scroll-behavior: smooth;
     font-family: $mainfont;
+
+    scroll-behavior: smooth;
 }
 
 body
 {
-    background: $white;
     overflow-x: hidden;
+
+    background: $white;
 }
 
 .title
 {
+    max-width: 508px;
+
     font-size: $title-lg-size;
     line-height: $title-lg-line-height;
     font-weight: 600;
     letter-spacing: -0.5px;
-    max-width: 508px;
 }
 
 
@@ -46,10 +50,12 @@ h2.main-title
 
 p.main-subtitle
 {
+    margin: 8px 0 0 0;
+
     font-size: $main-text-size;
     line-height: $main-text-line-height;
-    color: $text-turquoise;
     text-transform: uppercase;
-    margin: 8px 0 0 0;
     font-weight: 600;
+
+    color: $text-turquoise;
 }
